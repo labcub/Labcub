@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,p,label,li,a{
+  font-family: archia;
+}
+
+/*-----------------------------------------------------------Colors-----------------------------------------*/
+:root {
+  --white: #fff;
+  --light-theme: #f6f6f6;
+  --dark-theme: #3a3b36;
+  --dark-blue-theme: #25272c;
+  --brand-color: #000;
+  --primary: #000;
+  --secondary: #000;
+  --accents: #000;
+  --gray: #656970;
+  --brand-gradient: linear-gradient(35deg, var(--secondary) 10%, var(--primary) 93%);
+  --brand-keyline: #e1e2e1;
+}
+
+/*------------------------------------------------------------Fonts-----------------------------------------*/
+@font-face {
+  font-family: archia;
+  src: url(../fonts/archia-medium-webfont.woff2);
+}
+@font-face {
+  font-family: archia-bold;
+  src: url(../fonts/archia-bold-webfont.woff2);
+}
+@font-face {
+  font-family: archia-semibold;
+  src: url(../fonts/archia-semibold-webfont.woff2);
+}
+
+/*-------------------------------------------------------Container------------------------------------------*/
+
+
+/*------------------------------------------------------Header----------------------------------------------*/
+.header {
+  background-color: dodgerblue;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 16px 0 rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+.header_text {
+  font-size: 28px;
+  padding: 16px;
+  margin-left: 16px;
+}
+.link {
+  display: flex;
+  list-style: none;
+  margin-right: 10px;
+}
+.nav_item {
+  padding: 8px;
+  text-decoration: none;
+  color: var(--white);
+  margin-left: 16px;
+  cursor: pointer;
+  font-family: archia;
+  font-style: 16px;
+}
+#select {
+  color: #161625;
+}
+
+/*-------------------------------------------------------------Menu-----------------------------------------*/
+.menu {
+  width: auto;
+  padding: 8px;
+  display: none;
+}
+.collapsible {
+  direction: none;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--gray);
+}
+button {
+  padding: 8px;
+}
+.expand {
+  display: none;
+}
+.link {
+  padding-left: 20px;
+  text-decoration: none;
+  color: var(--gray);
+}
+a {
+  padding-bottom: 8px;
+}
+
+
+/*----------------------------------------------------------Content-----------------------------------------*/
+.content {
+  padding: 16px;
+}
+
+/*--------------------------------------------------------Aside--------------------------------------------*/
+.aside {
+  width: auto;
+  padding: 15px;
+  background-color: #afeeee;
+}
+
+/*-------------------------------------------------------------Footer--------------------------------------*/
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #161625;
+}
+.social_icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+.license {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 0 2rem;
+  padding-top: 50px;
+  color: #6c757d;
+  text-align: center;
+  font-family: "archia";
+  background-color: #161625;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.svg {
+  fill: #26d9d9;
+  color: #161625;
+  cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------Desktop-------------------------------------*/
+@media only screen and (min-width: 768px) {
+  
+  /*---Container---*/
+  .container {display: flex;}
+
+  /*-----Menu-----*/
+  .menu {float: left; display: block; width: 20%;}
+
+  /*---Content---*/
+  .content {width: 60%; padding-top: 50px;}
+  .content_header {font-size: 2.5rem; padding: 8px;}
+  .content_subtitle {font-size: 24px; padding: 8px;}
+  .content_text { font-size: 16px; padding: 8px; color: #7d7d7d;}
+
+  /*-----Aside-----*/
+  .aside {float: right; width: 20%;}
+  .menu_icon {display: none;}
+}
+
+/*------------------------------------------------------------------Tablets---------------------------------*/
+@media only screen and (min-width: 600px) {
+  
+}
